@@ -10,9 +10,9 @@
 </head>
 <body>
     <!-- Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white bg-opacity-95 shadow-sm">
         <div class="container">
-            <a class="navbar-brand fs-2 fw-bold text-primary" href="#">MaqAPP</a>
+            <a class="navbar-brand display-6 fw-bold text-primary" href="#">MaqAPP</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,9 +28,8 @@
     </nav>
 
     <!-- Carrusel -->
-    <section id="solucion" class="carousel-section">
-        <div class="background-overlay"></div>
-        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <section id="solucion" class="vh-100 mt-n5">
+        <div id="mainCarousel" class="carousel slide h-100" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
@@ -39,9 +38,9 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/images/1.jpg" class="d-block w-100" alt="Digitalización Industrial">
-                    <div class="carousel-caption">
-                        <h1>Transformando la Industria</h1>
-                        <p>Del papel a la nube en un solo click</p>
+                    <div class="carousel-caption text-center p-4 rounded bg-dark bg-opacity-50">
+                        <h1 class="display-4 fw-bold text-shadow">Transformando la Industria</h1>
+                        <p class="lead">Del papel a la nube en un solo click</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -72,36 +71,44 @@
     </section>
 
     <!-- Equipo -->
-    <section id="equipo" class="py-5">
+    <section id="equipo" class="py-5 bg-light bg-opacity-90">
         <div class="container">
-            <h2 class="text-center mb-5">Nuestro Equipo</h2>
-            <div class="row">
+            <h2 class="text-center mb-5 display-6">Nuestro Equipo</h2>
+            <div class="row g-4">
                 <div class="col-md-3">
-                    <div class="team-member text-center">
-                        <img src="assets/images/team1.png" alt="CEO" class="rounded-circle mb-3">
-                        <h4>Jonh v.</h4>
-                        <p class="text-muted">CEO & Fundadora</p>
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <img src="assets/images/team1.png" alt="CEO" class="rounded-circle mx-auto mb-3" style="width: 200px; height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h4 class="card-title h5 fw-bold">Jonh v.</h4>
+                            <p class="card-text text-muted">CEO & Fundadora</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="team-member text-center">
-                        <img src="assets/images/team2.png" alt="CTO" class="rounded-circle mb-3">
-                        <h4>Richard H.</h4>
-                        <p class="text-muted">CTO</p>
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <img src="assets/images/team2.png" alt="CTO" class="rounded-circle mx-auto mb-3" style="width: 200px; height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h4 class="card-title h5 fw-bold">Richard H.</h4>
+                            <p class="card-text text-muted">CTO</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="team-member text-center">
-                        <img src="assets/images/team3.png" alt="COO" class="rounded-circle mb-3">
-                        <h4>Diego G.</h4>
-                        <p class="text-muted">COO</p>
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <img src="assets/images/team3.png" alt="COO" class="rounded-circle mx-auto mb-3" style="width: 200px; height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h4 class="card-title h5 fw-bold">Diego G.</h4>
+                            <p class="card-text text-muted">COO</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="team-member text-center">
-                        <img src="assets/images/team4.png" alt="CFO" class="rounded-circle mb-3">
-                        <h4>Francisco P.</h4>
-                        <p class="text-muted">CFO</p>
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <img src="assets/images/team4.png" alt="CFO" class="rounded-circle mx-auto mb-3" style="width: 200px; height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h4 class="card-title h5 fw-bold">Francisco P.</h4>
+                            <p class="card-text text-muted">CFO</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,26 +116,26 @@
     </section>
 
     <!-- Footer -->
-    <footer id="contacto" class="bg-dark text-white py-4">
+    <footer id="contacto" class="bg-dark text-white py-4 text-center">
         <div class="container">
-            <div class="row">
+            <div class="row g-4">
                 <div class="col-md-4">
-                    <h5>MaqAPP</h5>
-                    <p>Transformando la gestión de reportes industriales</p>
+                    <h5 class="fw-bold mb-3">MaqAPP</h5>
+                    <p class="mb-0">Transformando la gestión de reportes industriales</p>
                 </div>
                 <div class="col-md-4">
-                    <h5>Contacto</h5>
-                    <p>
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <p class="mb-0">
                         <i class="fas fa-envelope me-2"></i> info@maqapp.com<br>
                         <i class="fas fa-phone me-2"></i> +56 9 9999 9999
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <h5>Síguenos</h5>
-                    <div class="social-links">
-                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    <h5 class="fw-bold mb-3">Síguenos</h5>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="text-white fs-4"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>

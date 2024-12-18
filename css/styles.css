@@ -2,20 +2,14 @@
 body {
     font-family: 'Arial', sans-serif;
     padding-top: 76px;
-    background: url('../assets/images/fondo.png') fixed;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    background: url('../assets/images/fondo.png') fixed center/cover;
 }
 
 /* Overlay para el fondo */
 body::before {
     content: '';
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: rgba(255, 255, 255, 0.85);
     z-index: -1;
 }
@@ -46,11 +40,9 @@ body::before {
 }
 
 .carousel-item img {
+    height: 100vh;
     object-fit: cover;
-    height: 100%;
-    width: 100%;
     filter: brightness(0.8);
-    display: block;
 }
 
 .carousel-caption {
@@ -94,11 +86,11 @@ body::before {
 /* Footer */
 .social-links a {
     font-size: 1.5rem;
-    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #007bff !important;
+    transform: scale(1.1);
 }
 
 /* Actualización de las secciones para mejor contraste */
@@ -124,20 +116,57 @@ footer {
     background: rgba(33, 37, 41, 0.95) !important;
     position: relative;
     z-index: 1;
+    text-align: center;
+}
+
+footer h5 {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+footer .col-md-4 {
+    margin-bottom: 2rem;
+}
+
+footer .fas {
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+footer .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 15px;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    padding: 0.5rem;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
 }
 
 /* Controles del carrusel */
 .carousel-control-prev,
 .carousel-control-next {
     width: 5%;
-    opacity: 0.8;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-    opacity: 1;
     background: rgba(0, 0, 0, 0.4);
 }
 
@@ -150,4 +179,10 @@ footer {
     height: 12px;
     border-radius: 50%;
     margin: 0 5px;
-} 
+}
+
+/* Texto con sombra para mejor legibilidad */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+ 
