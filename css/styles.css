@@ -3,6 +3,8 @@ body {
     font-family: 'Arial', sans-serif;
     padding-top: 76px;
     background: url('../assets/images/fondo.png') fixed center/cover;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 /* Overlay para el fondo */
