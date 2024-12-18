@@ -2,21 +2,43 @@
 body {
     font-family: 'Arial', sans-serif;
     padding-top: 76px;
+    background: url('../assets/images/fondo.png') fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Overlay para el fondo */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: -1;
 }
 
 /* Navegación */
 .navbar {
     transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.95) !important;
 }
 
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
+    color: #333;
 }
 
 /* Carrusel */
 .carousel-section {
+    position: relative;
     margin-top: -76px;
+    background: transparent;
+    box-shadow: none;
+    height: 100vh;
 }
 
 .carousel-item {
@@ -26,18 +48,31 @@ body {
 .carousel-item img {
     object-fit: cover;
     height: 100%;
-    filter: brightness(0.7);
+    width: 100%;
+    filter: brightness(0.8);
+    display: block;
 }
 
 .carousel-caption {
-    bottom: 40%;
-    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    bottom: 50%;
+    transform: translateY(50%);
 }
 
 .carousel-caption h1 {
     font-size: 3.5rem;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
 
 /* Equipo */
@@ -47,6 +82,7 @@ body {
     object-fit: cover;
     border: 5px solid #f8f9fa;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    background-color: #fff;
 }
 
 .team-member h4 {
@@ -63,4 +99,55 @@ body {
 
 .social-links a:hover {
     color: #007bff !important;
+}
+
+/* Actualización de las secciones para mejor contraste */
+section {
+    background: rgba(255, 255, 255, 0.92);
+    margin: 2rem 0;
+    padding: 4rem 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+/* Mejoras en el equipo */
+.team-member {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+/* Footer actualizado */
+footer {
+    background: rgba(33, 37, 41, 0.95) !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* Controles del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-indicators {
+    bottom: 20px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
 } 
