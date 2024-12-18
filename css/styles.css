@@ -1,0 +1,66 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 76px;
+}
+
+/* Navegación */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Carrusel */
+.carousel-section {
+    margin-top: -76px;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    filter: brightness(0.7);
+}
+
+.carousel-caption {
+    bottom: 40%;
+    text-align: center;
+}
+
+.carousel-caption h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Equipo */
+.team-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #f8f9fa;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.team-member h4 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Footer */
+.social-links a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff !important;
+} 
